@@ -1,0 +1,14 @@
+﻿using System.Text.Json.Serialization;
+
+namespace ApiEnglishv1.Models
+{
+    public class Classroom
+    {
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
+        public string Thumbnail { get; set; } = string.Empty;
+
+        public List<Student>? Student { get; set; }
+    }
+}
